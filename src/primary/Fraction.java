@@ -50,12 +50,11 @@ public class Fraction {
      * @return minFraction
      */
     public String minimizeFraction() {
-        int logNum;
-        int[] arrNum = new int[numerator.getNumber()];
-        int[] arrDen = new int[denominator.getNumber()];
+        int log;
         if (numerator.getNumber() < denominator.getNumber()) {
+            int[] arrNum = new int[numerator.getNumber()];
             do {
-                logNum = numerator.getNumber();
+                log = numerator.getNumber();
                 System.out.println("working... Current Fraction:" + numerator.getNumber() + "/" + denominator.getNumber());
                 arrNum = numerator.primaryFactors();
                 for (int i = 0; i < arrNum.length; i++) {
@@ -68,11 +67,12 @@ public class Fraction {
 
                 }
 
-            } while (logNum != numerator.getNumber());
+            } while (log != numerator.getNumber());
 
         } else {
+            int[] arrDen = new int[denominator.getNumber()];
             do {
-                logNum = numerator.getNumber();
+                log = numerator.getNumber();
                 System.out.println("Working... Current Fraction:" + numerator.getNumber() + "/" + denominator.getNumber());
                 arrDen = denominator.primaryFactors();
                 for (int i = 0; i < arrDen.length; i++) {
@@ -85,7 +85,7 @@ public class Fraction {
 
                 }
 
-            } while (logNum != numerator.getNumber());
+            } while (log != numerator.getNumber());
         }
         String minFraction = numerator.getNumber() + "/" + denominator.getNumber();
         return minFraction;
