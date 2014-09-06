@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Trains
+ * @author ThinkRedstone
  */
 public class Main {
 
