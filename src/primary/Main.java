@@ -24,6 +24,7 @@ public class Main {
         while (true) {
             System.out.println("Enter your fraction in this pattern: X/Y");
             Fraction fraction = new Fraction(in.next());
+            System.out.println("@bla");
             System.out.println("The minimum fraction is: " + fraction.minimizeFraction());
         }
 
