@@ -21,12 +21,12 @@ public class Main {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
-        while (true) {
-            System.out.println("Enter your fraction in this pattern: X/Y");
-            Fraction fraction = new Fraction(in.next());
-            System.out.println("The minimum fraction is: " + fraction.minimizeFraction());
-        }
-
+//        while (true) {
+//            System.out.println("Enter your fraction in this pattern: X/Y");
+//            Fraction fraction = new Fraction(in.next());
+//            System.out.println("The minimum fraction is: " + fraction.minimizeFraction());
+//        }
+        System.out.println("Bla");
     }
 
 }
